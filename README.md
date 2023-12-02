@@ -1,1 +1,1 @@
-# jsnotes1
+# Javascript Notes 
