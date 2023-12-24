@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+   
+    <script>
+        const div = document.createElement('div')
+        console.log(div);
+        div.className = "main"
+        div.id = Math.random() * 10
+        div.setAttribute("tag", "generated title")
+        //<div class="main" id="4.399238319132919" tag="generated title"></div>
+        div.style.backgroundColor = "greem"
+        div.style.padding = "5px"
+
+
+
+        //how to move div from memory to page how to attach div to page
+
+        // div.innerText = "chai aur code"
+        // div.innerText = "dhruv"   //overwrite
+        const addText = document.createTextNode("chai aur code")
+        div.appendChild(addText)
+
+        //set attribute directly sets 
+        //preffered createTextNode and add to div by append child
+    
+        document.body.appendChild(div)   //add div to document child is div
+        
+    </script>
+</body>
+</html>
