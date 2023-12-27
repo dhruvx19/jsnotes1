@@ -24,6 +24,31 @@
         addLanguage("typescript")
         addLanguage("go")
 
+
+        function addOptiLaguage(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+        addOptiLaguage("javascript")
+
+
+        //edit
+        const secondLang = document.querySelector("li:nth-child(2)")
+        //secondLang.innerHTML = "c++"   //not optimised as it traverse to all
+        const newli = document.createElement('li')
+        newli.textContent = "c++"
+        secondLang.replaceWith(newli)
+
+        //edit
+        const firstLang  =  document.querySelector("li:first-child")
+        firstLang.outerHTML = "<li>c++</li>" 
+
+        //remove
+        const lastLang = document.querySelector("li:last-child")
+        lastLang.remove()
+
+
 </script>
 
 </body>
