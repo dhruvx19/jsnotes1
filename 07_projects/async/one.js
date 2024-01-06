@@ -23,5 +23,4 @@ const stopChangingColor = function(){
 }
 
 document.querySelector('#start').addEventListener('click', startChangingColor);
-document.querySelector('#start').addEventListener('click', stopChangingColor);
 
