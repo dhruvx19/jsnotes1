@@ -15,6 +15,7 @@ const changeText = function () {
 const changeMe = setTimeout(changeText,2000);
 
 
+
 // to stop event
 // use clearTimeout
 // on a event
